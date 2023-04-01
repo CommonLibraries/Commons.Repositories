@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Commons.Repositories
 {
-    public interface IRepository<TEntity, TKey>
+    public interface IRepository<TEntity>
     {
-        Task<TEntity> GetAsync(TKey id, CancellationToken cancellationToken = default);
-        Task<TEntity> CreateAsync(TEntity entity, CancellationToken cancellationToken = default);
-        Task<TEntity>UpdateAsync(TEntity entity, CancellationToken cancellationToken= default);
-        Task<TEntity> DeleteAsync(TKey id, CancellationToken cancellationToken = default);
+
     }
 }
