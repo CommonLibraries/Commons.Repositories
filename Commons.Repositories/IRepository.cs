@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Commons.Repositories
 {
-    public interface IRepository<TEntity> where TEntity : IAggregateRoot {
+    public interface IRepository<TEntity> where TEntity : IAggregateRoot
+    {
 
     }
 }
